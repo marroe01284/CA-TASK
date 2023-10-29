@@ -27,25 +27,28 @@
         </div>
 <div class="log-in">
     <h1>Log in</h1>
-    <p>Enter your credentials to acces your account</p>
+    <p class="sub-paragraph">Enter your credentials to acces your account</p>
     <button class="google-btn">
-        <img src="Images/Social icon (1).png" alt="google icon">
+        <img class="google-icon" src="Images/Social icon (1).png" alt="google icon">
         Sign in with Google
     </button>
-<div class="border-1">or</div>
-<div class="border-2"></div>
-<form class="log-in-form">
-    <label for="e-mail">E-mail adress</label><br>
-    <input type="text" id="e-mail" name="e-mail"><br>
-    <label for="password">password</label><br>
-    <input type="text"  id="password" name="password"><br>
-    <input type="checkbox" id="remeber-me" name="remeber-me">
-    <label for="remeber-me">Remeber me</label>
+    <div class="divide">
+        <div class="border-1"></div>
+        <p class="mid-p">or</p>
+        <div class="border-2"></div>
+    </div>
+        <form class="log-in-form">
+    <label class="e-mail" for="e-mail">E-mail adress</label><br>
+    <input class="email-container" type="text" id="e-mail" name="e-mail"><br>
+    <label class="password" for="password">Password <a class="forgot-password" href="#">Forgot password?</a></label><br>
+    <input class="pass-container" type="text"  id="password" name="password"><br>
+    <input class="checkbox" type="checkbox" id="remeber-me" name="remeber-me">
+    <label class="remember-me" for="remeber-me">Remember me</label>
 </form>
 <button class="submit">
     Log in
 </button>
-<p>not a memeber? <a href="#">Sign-up</a></p>
+<p class="bottom-paragraph">not a memeber? <a class="sign-up" href="#">Sign-up</a></p>
 </div>
     </div>
 </body>
