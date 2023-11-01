@@ -112,3 +112,7 @@ p {
 span{
     color: #696A6A;
 }
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
