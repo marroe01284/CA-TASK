@@ -5,16 +5,19 @@
     --button-color: #5237D4;
     --button-inactive: #696A6A;
 }
-*{
+
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
 body {
     background-color: var(--background-color);
     min-height: 100vh;
     font-family: 'Poppins', sans-serif;
 }
+
 .header {
     top: 0;
     left: 0;
@@ -24,30 +27,33 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-.square-eyes{
-   width: 200px;
-   height: 50px;
+
+.square-eyes {
+    width: 200px;
+    height: 50px;
 }
 
-.navigation{
+.navigation {
     padding: 20px;
 }
 
-.fa-cart-shopping{
+.fa-cart-shopping {
     padding-right: 20px;
     color: #FFFFFF;
 }
 
-.fa-bars{
+.fa-bars {
     color: #FFFFFF;
 }
-.heading-two{
+
+.heading-two {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 15px;
 }
-.movie-container{
+
+.movie-container {
     width: 360px;
     height: 232px;
     background-color: #252525;
@@ -57,13 +63,14 @@ body {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto auto;
-    grid-template-areas: 
-    "poster heading"
-    "poster buttons"
-    "poster description"
-    "poster rent";
+    grid-template-areas:
+        "poster heading"
+        "poster buttons"
+        "poster description"
+        "poster rent";
 }
-.movie-poster img{
+
+.movie-poster img {
     width: 134.571px;
     height: 220.4px;
     margin: 6 0 6 3;
@@ -73,13 +80,14 @@ body {
     grid-area: poster;
 }
 
-h3{
+h3 {
     font-size: 12px;
     color: white;
     text-transform: uppercase;
     margin-top: 6px;
 }
-.rating{
+
+.rating {
     width: 49px;
     height: 21px;
     padding: 12px 32px;
@@ -92,36 +100,45 @@ h3{
     background-color: #575562;
     font-size: 8px;
     margin: 6px;
-    
-    
-    
+
+
+
 }
-.fa-star{
+
+.fa-star {
     color: #E3CD00;
     padding-right: 5px;
 }
-.heading{
+
+.heading {
     grid-area: heading;
     display: flex;
     padding-left: 10px;
 
 }
-.action-buttons{
+
+.action-buttons {
     grid-area: buttons;
     padding-left: 10px;
 }
-.movie-description{
+
+.movie-description {
     grid-area: description;
     padding-left: 10px;
 }
-.movie-description a{
+
+.movie-description a {
     text-decoration: none;
 }
-.information-rent{
+
+.information-rent {
     grid-area: rent;
     padding-left: 10px;
 }
-.comedy, .action, .drama{
+
+.comedy,
+.action,
+.drama {
     font-size: 9px;
     background-color: #5237D4;
     color: #FFFFFF;
@@ -130,27 +147,31 @@ h3{
     border-radius: 32px;
     border: none;
 }
-.movie-text{
+
+.movie-text {
     font-size: 8px;
     color: #FFFFFF;
 }
-.information-rent{
+
+.information-rent {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.rent{
+
+.rent {
     width: 94px;
     height: 24px;
     border-radius: 8px;
-    background-color:#3D3D3D ;
+    background-color:var(--button-color);
     color: #FFFFFF;
     border: none;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.like{
+
+.like {
     width: 25px;
     height: 25px;
     border-radius: 100%;
@@ -163,47 +184,218 @@ h3{
     align-items: center;
 }
 
-.order{
+.order {
     font-size: 32px;
     color: #5237D4;
     padding-right: 10px;
 }
-.heading-three{
+
+.heading-three {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.movie-collection{
-display: flex;
-justify-content: flex-start;
-align-items: center;
+
+.movie-collection {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 
 }
-.batman, .once-up, .toy-story, .godzilla{
+
+.batman,
+.once-up,
+.toy-story,
+.godzilla {
     padding: 15px;
-    
-} 
-.godzilla img{
+
+}
+
+.godzilla img {
     width: 75px;
     height: 111px;
 }
-.toy-story img{
+
+.toy-story img {
     width: 75px;
     height: 111px;
 }
-.once-up img{
+
+.once-up img {
     width: 75px;
     height: 111px;
 }
-.batman img{
+
+.batman img {
     width: 75px;
     height: 111px;
 }
-.p-batman, .p-once, .p-toy, .p-godzilla{
-   word-wrap: break-word;
-   color: #FFFFFF;
-   text-align: center;
-   font-size: 10px;
-   width: 75px;
-   height: 45px;
+
+.p-batman,
+.p-once,
+.p-toy,
+.p-godzilla {
+    word-wrap: break-word;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 10px;
+    width: 75px;
+    height: 45px;
+    padding: 10px 0;
+}
+
+.heading-four {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.movie-collection-two {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.transformers,
+.star-wars,
+.avengers,
+.black-panther {
+    padding: 15px;
+}
+
+.movie-collection-two img {
+    width: 75px;
+    height: 111px;
+}
+
+.p-transformers,
+.p-star-wars,
+.p-avengers,
+.p-black-panther {
+    word-wrap: break-word;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 10px;
+    width: 75px;
+    height: 45px;
+    padding: 10px 0;
+}
+
+.trailer-card {
+    width: 360px;
+    height: 232px;
+    background-color: #252525;
+    border-radius: 6px;
+    border: 1px solid #5237D4;
+    margin: 0px 35px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+        "ff trailer"
+        "ff trailer-btn"
+        "ff script"
+        "ff information"
+    ;
+}
+
+.trailer-poster {
+    grid-area: ff;
+}
+
+.trailer-poster img {
+    width: 135px;
+    height: 220px;
+    margin: 6 0 6 3;
+}
+
+.heading-trailer {
+    grid-area: trailer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.trailer-btn {
+    grid-area: trailer-btn;
+    padding-left: 10px;
+
+}
+
+.action-two,
+.comedy-two,
+.drama-two {
+    font-size: 9px;
+    background-color: #5237D4;
+    color: #FFFFFF;
+    width: 65px;
+    height: 21px;
+    border-radius: 32px;
+    border: none;
+}
+
+.trailer-description {
+    grid-area: script;
+    font-size: 8px;
+    color: #FFFFFF;
+    padding-left: 10px;
+}
+
+.information-trailer {
+    grid-area: information;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.watch-trailer {
+    width: 60px;
+    height: 24px;
+    border-radius: 8px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: var(--button-color);
+    color: #FFFFFF;
+
+}
+
+.fa-circle-play {
+    padding-left: 5px;
+}
+
+.like-2 {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    color: #FFFFFF;
+    background-color: #3D3D3D;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px;
+}
+
+.realease {
+    font-size: 9px;
+    color: #FFFFFF;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-wrap: break-word;
+}
+
+.soon{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
 }
