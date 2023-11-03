@@ -1,18 +1,20 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600&display=swap"
-    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600&display=swap"
+        rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap" rel="stylesheet">
-<script src="https://kit.fontawesome.com/156d4e89cb.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="CSS/checkout.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/156d4e89cb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/checkout.css">
     <title>SQUARE EYES</title>
 </head>
+
 <body>
     <div class="movie-card">
         <div class="movie-check">
@@ -21,8 +23,8 @@
             </div>
             <img src="Images/mvie-guards.png" alt="the guards of the galaxy movie">
         </div>
-            <div class="movie-info">
-            <p>Guardians of the galaxy vol 2 <br>2:37:36 action,sci-fi <br>2022, english, 12 subtiltes  </p>
+        <div class="movie-info">
+            <p>Guardians of the galaxy vol 2 <br>2:37:36 action,sci-fi <br>2022, english, 12 subtiltes </p>
         </div>
         <div class="price">
             <ul>
@@ -48,28 +50,30 @@
             </div>
             <div>
                 <label for="checkbox"><span class="credit-debit">Credit or Debit Card</span> <br>
-                    <span class="sub-credit">use a credit or debit card to pay with automatic payments enabled </span></label>
-                </div>
-            
+                    <span class="sub-credit">use a credit or debit card to pay with automatic payments enabled
+                    </span></label>
+            </div>
+
         </form>
     </div>
     <div class="pay-pal">
         <form class="f-two">
             <div>
-            <input class="pay-pal-chec" type="checkbox" name="pay-pal-check" id="pay-pal-check">
-        </div>
-        <div>
-            <label for="checkbox"><span class="pay">PayPal</span> <br><span class="sub-pal">prepay your bill by making incrematal PayPal payments</span></label>
-        </div>
+                <input class="pay-pal-chec" type="checkbox" name="pay-pal-check" id="pay-pal-check">
+            </div>
+            <div>
+                <label for="checkbox"><span class="pay">PayPal</span> <br><span class="sub-pal">prepay your bill by
+                        making incrematal PayPal payments</span></label>
+            </div>
         </form>
     </div>
     <div class="form">
         <form>
             <div class="cardholder">
                 <label for="cardholder">name of cardholder</label><br>
-            </div>  
-                <input class="cardholder-bar" type="text" name="cardholder" id="cardholder"><br>
-                <label class="card-number" for="card-number">cardnumber</label> <br>
+            </div>
+            <input class="cardholder-bar" type="text" name="cardholder" id="cardholder"><br>
+            <label class="card-number" for="card-number">cardnumber</label> <br>
             <input class="card-number-bar" type="text" name="card-number" id="card-number"> <br>
             <div class="wrap">
                 <div class="grid">
@@ -85,16 +89,23 @@
     </div>
     <div class="payment-adress">
         <form>
-            <label class="payment-street" for="payment-adress">payment adress</label><br>
-            <input class="street-box" type="text"><br>
+            <div class="adress-padding">
+
+                <label class="payment-street" for="payment-adress">payment adress</label><br>
+                <input class="street-box" type="text"><br>
+            </div>
             <label class="street-name" for="street-name">street name</label><br>
             <input class="name-box" type="text"><br>
-            <input class="save-pay" type="checkbox">
-            <label for="save-payment">save payment method for later</label>
+            <div class="save">
+                <input class="save-pay" type="checkbox">
+                <label class="save-payment" for="save-payment">save payment method for later</label>
+            </div>
+
         </form>
     </div>
     <div class="payment-btn">
-        <button>confirm payment</button>
+        <button class="confirm">confirm payment</button>
     </div>
 </body>
+
 </html>
