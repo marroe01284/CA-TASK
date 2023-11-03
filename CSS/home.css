@@ -16,18 +16,23 @@ body {
     background-color: var(--background-color);
     min-height: 100vh;
     font-family: 'Poppins', sans-serif;
+    background-color: #000000;
 }
 
 .header {
     top: 0;
     left: 0;
     width: 100%;
-    background: transparent;
+
+}
+.navigation{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
+.navigation ul{
+display: none;
+}
 .square-eyes {
     width: 200px;
     height: 50px;
@@ -53,7 +58,15 @@ body {
     margin-top: 15px;
     color: white;
 }
+.background-home{
+    background-image: url("../Images/backgroundhome.png");
+    width: 100vw;
+    height: 535px;
+    background-size: 100%;
+    z-index: -1;
+    background-repeat: no-repeat;
 
+}
 .movie-container {
     width: 360px;
     height: 232px;
@@ -438,9 +451,21 @@ body {
     display: none;
 }
 
+
 /*Small screens*/
 @media (min-width: 430px) {
-   
+.icon-header-two{
+    display: none;
+}
+.background-home{
+    display: none;
+}
+.intro-movie{
+    display: none;
+}
+.categories{
+    display: none;
+}
 }
 /*Medium screens*/
 @media (min-width: 768px) {
@@ -494,6 +519,65 @@ body {
         gap: 34px;
         flex-grow: 1;
     }
+    .header{
+        width: 100%;
+    }
+    .navigation{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .navigation a{
+        font-size: 16px;
+        font-weight: 400;
+        color: #D9D9D9;
+        text-decoration: none;
+    
+    
+    } 
+    .navigation ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 24px;
+        list-style-type: none;
+        
+    }
+    .icon-header{
+        display: none;
+    }
+    .icon-header-two{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        color: #D9D9D9;
+    }
+
+.background-home{
+    background-image:url("../Images/backgroundhome.png");
+    position: absolute;
+    display: flex;
+}
+.intro-movie{
+    width: 1440px;
+    height: 535px;
+    display: flex;
+}
+.heading-movie h1{
+    color: #FFFFFF;
+    font-size: 48px;
+}
+.heading-movie p{
+    color: #D9D9D9;
+    font-size: 16px;
+}
+.square-one{
+    color: #4308C2;
+}
+.square-two{
+    color: #9B6CFE;
+}
 }
 /*Extra Large screens*/
 @media (min-width: 1280px) {
@@ -531,7 +615,8 @@ body {
         flex-direction: column;
        width: 1440px;
        height: 172px;
-       background-color: #181818; 
+       background-color: #181818;
+       width: 100%; 
     }
     .word-flex{
         display: flex;
@@ -544,4 +629,212 @@ body {
         gap: 34px;
         flex-grow: 1;
     }
+    .header{
+        width: 100%;
+    }
+    .navigation{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .navigation a{
+        font-size: 16px;
+        font-weight: 400;
+        color: #D9D9D9;
+        text-decoration: none;
+    
+    
+    } 
+    .navigation ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 24px;
+        list-style-type: none;
+        
+    }
+    .icon-header{
+       display: none;
+    }
+    .fa-cart-shopping{
+        display: none;
+    }
+    .icon-header-two{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        color: #D9D9D9;
+    }
+    .background-home{
+        width: 100vw;
+        background-image:url("../Images/backgroundhome.png");
+        position: absolute;
+        display: flex;
+    }
+    .intro-movie{
+        width: 1440px;
+        height: 535px;
+        display: flex;
+        width: 100%;
+    }
+    .heading-movie h1{
+        color: #FFFFFF;
+        font-size: 48px;
+    }
+    .heading-movie p{
+        color: #D9D9D9;
+        font-size: 16px;
+    }
+    .square-one{
+        color: #4308C2;
+    }
+    .square-two{
+        color: #9B6CFE;
+    }
+    .categories{
+        width: 100vw;
+        justify-content: space-evenly;
+        gap: 24px;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+       "sci horror rom ac west"
+       "music docu anim crime dram"
+        ;
+    }
+    .sci-fi{
+        grid-area: sci;
+        width: 200px;
+        height: 76px;
+        background-color: #252525;
+        display: flex;
+        align-items: center;
+        border-radius: 6px;
+        color: #FFFFFF;
+        padding-left: 5px;
+        gap: 10px;
+    }
+    .musical{
+        grid-area: music;
+        width: 200px;
+        height: 76px;
+        background-color: #252525;
+        display: flex;
+        align-items: center;
+        border-radius: 6px;
+        color: #FFFFFF;
+        padding-left: 5px;
+        gap: 10px;
+    }
+    .horror{
+        grid-area: horror;
+        width: 200px;
+        height: 76px;
+        background-color: #252525;
+        display: flex;
+        align-items: center;
+        border-radius: 6px;
+        color: #FFFFFF;
+        padding-left: 5px;
+        gap: 10px;
+    }
+    .documentaries{
+        grid-area: docu;
+        width: 200px;
+        height: 76px;
+        background-color: #252525;
+        display: flex;
+        align-items: center;
+        border-radius: 6px;
+        color: #FFFFFF;
+        padding-left: 5px;
+        gap: 10px;
+    }
+    .romance{
+        grid-area: rom;
+        width: 200px;
+        height: 76px;
+        background-color: #252525;
+        display: flex;
+        align-items: center;
+        border-radius: 6px;
+        color: #FFFFFF;
+        padding-left: 5px;
+        gap: 10px;
+    }
+    .animation{
+        grid-area: anim;
+        width: 200px;
+        height: 76px;
+        background-color: #252525;
+        display: flex;
+        align-items: center;
+        border-radius: 6px;
+        color: #FFFFFF;
+        padding-left: 5px;
+        gap: 10px;
+    }
+    .action-one{
+        grid-area: ac;
+        width: 200px;
+        height: 76px;
+        background-color: #252525;
+        display: flex;
+        align-items: center;
+        border-radius: 6px;
+        color: #FFFFFF;
+        padding-left: 5px;
+        gap: 10px;
+    }
+    .crime{
+        grid-area: crime;
+        width: 200px;
+        height: 76px;
+        background-color: #252525;
+        display: flex;
+        align-items: center;
+        border-radius: 6px;
+        border-radius: 6px;
+        color: #FFFFFF;
+        padding-left: 5px;
+        gap: 10px;
+    }
+    .western{
+        grid-area: west;
+        width: 200px;
+        height: 76px;
+        background-color: #252525;
+        display: flex;
+        align-items: center;
+        border-radius: 6px;
+        color: #FFFFFF;
+        padding-left: 5px;
+        gap: 10px;
+    }
+    .drama-one{
+        grid-area: dram;
+        width: 200px;
+        height: 76px;
+        background-color: #252525;
+        display: flex;
+        align-items: center;
+        border-radius: 6px;
+        color: #FFFFFF;
+        padding-left: 5px;
+        gap: 10px;
+        
+    }
+    .alien-container, .music-container, .horror-container, .documentary-container, .romance-container, .animation-container, .action-container, .crime-container, .western-container, .drama-container {
+        width: 59px;
+        height: 56px;
+        background-color: #000000;
+        color: #4308C2;
+        border-radius: 6px;
+        font-size: 24;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
 }
