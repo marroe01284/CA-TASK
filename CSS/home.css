@@ -73,7 +73,6 @@ display: none;
     background-color: #252525;
     border-radius: 6px;
     border: 1px solid #5237D4;
-    margin: 0 35px;
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto auto;
@@ -249,11 +248,9 @@ display: none;
 .p-once,
 .p-toy,
 .p-godzilla {
-    word-wrap: break-word;
     color: #FFFFFF;
     text-align: center;
     font-size: 10px;
-    width: 75px;
     height: 45px;
     padding: 10px 0;
 }
@@ -300,7 +297,6 @@ display: none;
     background-color: #252525;
     border-radius: 6px;
     border: 1px solid #5237D4;
-    margin: 0px 35px;
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto auto;
@@ -836,5 +832,24 @@ display: none;
         display: flex;
         justify-content: center;
         align-items: center;
+}
+.top-ten{
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+}
+.movie-collection img{
+width: 213px;
+height: 313px;
+}
+.movie-collection p{
+    font-size: 16px;
+}
+.trailer-container{
+    display: flex;
+    gap: 85px;
+    justify-content: center;
+    align-items: center;
 }
 }
