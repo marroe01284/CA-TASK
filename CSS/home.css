@@ -286,9 +286,14 @@ display: none;
     color: #FFFFFF;
     text-align: center;
     font-size: 10px;
-    width: 75px;
-    height: 45px;
     padding: 10px 0;
+}
+.trailer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 80px;
 }
 
 .trailer-card {
@@ -462,6 +467,22 @@ display: none;
 .categories{
     display: none;
 }
+.alien-container, .music-container, .horror-container, .documentary-container, .romance-container, .animation-container, .action-container, .crime-container, .western-container, .drama-container {
+    display: none;
+}
+.top-ten{
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.black-panther-two{
+    display: none;
+}
+.godzilla{
+    display: none;
+}
 }
 /*Medium screens*/
 @media (min-width: 768px) {
@@ -574,6 +595,204 @@ display: none;
 .square-two{
     color: #9B6CFE;
 }
+.categories{
+    width: 100vw;
+    justify-content: space-evenly;
+    gap: 24px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+   "sci horror rom ac west"
+   "music docu anim crime dram"
+    ;
+}
+.sci-fi{
+    grid-area: sci;
+    width: 200px;
+    height: 76px;
+    background-color: #252525;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    color: #FFFFFF;
+    padding-left: 5px;
+    gap: 10px;
+}
+.musical{
+    grid-area: music;
+    width: 200px;
+    height: 76px;
+    background-color: #252525;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    color: #FFFFFF;
+    padding-left: 5px;
+    gap: 10px;
+}
+.horror{
+    grid-area: horror;
+    width: 200px;
+    height: 76px;
+    background-color: #252525;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    color: #FFFFFF;
+    padding-left: 5px;
+    gap: 10px;
+}
+.documentaries{
+    grid-area: docu;
+    width: 200px;
+    height: 76px;
+    background-color: #252525;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    color: #FFFFFF;
+    padding-left: 5px;
+    gap: 10px;
+}
+.romance{
+    grid-area: rom;
+    width: 200px;
+    height: 76px;
+    background-color: #252525;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    color: #FFFFFF;
+    padding-left: 5px;
+    gap: 10px;
+}
+.animation{
+    grid-area: anim;
+    width: 200px;
+    height: 76px;
+    background-color: #252525;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    color: #FFFFFF;
+    padding-left: 5px;
+    gap: 10px;
+}
+.action-one{
+    grid-area: ac;
+    width: 200px;
+    height: 76px;
+    background-color: #252525;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    color: #FFFFFF;
+    padding-left: 5px;
+    gap: 10px;
+}
+.crime{
+    grid-area: crime;
+    width: 200px;
+    height: 76px;
+    background-color: #252525;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    border-radius: 6px;
+    color: #FFFFFF;
+    padding-left: 5px;
+    gap: 10px;
+}
+.western{
+    grid-area: west;
+    width: 200px;
+    height: 76px;
+    background-color: #252525;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    color: #FFFFFF;
+    padding-left: 5px;
+    gap: 10px;
+}
+.drama-one{
+    grid-area: dram;
+    width: 200px;
+    height: 76px;
+    background-color: #252525;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    color: #FFFFFF;
+    padding-left: 5px;
+    gap: 10px;
+    
+}
+.alien-container, .music-container, .horror-container, .documentary-container, .romance-container, .animation-container, .action-container, .crime-container, .western-container, .drama-container {
+    width: 59px;
+    height: 56px;
+    background-color: #000000;
+    color: #4308C2;
+    border-radius: 6px;
+    font-size: 24;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top-ten{
+display: flex;
+gap: 80px;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+padding-bottom: 50px;
+}
+.movie-collection img, .movie-collection-two img{
+width: 213px;
+height: 313px;
+}
+
+.movie-collection p, .movie-collection-two p{
+font-size: 16px;
+}
+.trailer-container{
+display: flex;
+gap: 85px;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+padding-bottom: 50px;
+}
+.movie-collection, .movie-collection-two {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 32px;
+padding-bottom: 50px;
+}
+.batman,
+.once-up,
+.toy-story,
+.godzilla {
+padding: 0;
+
+}
+.transformers,
+.star-wars,
+.avengers,
+.black-panther {
+padding: 0px;
+}
+.black-panther-two, .godzilla{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.heading-two, .heading-three, .heading-four, .soon{
+padding-bottom: 20px;
+}
 }
 /*Extra Large screens*/
 @media (min-width: 1280px) {
@@ -610,7 +829,7 @@ display: none;
         align-items: center;
         flex-direction: column;
        width: 1440px;
-       height: 172px;
+       height: 181px;
        background-color: #181818;
        width: 100%; 
     }
@@ -838,12 +1057,15 @@ display: none;
     gap: 80px;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
+    padding-bottom: 50px;
 }
-.movie-collection img{
+.movie-collection img, .movie-collection-two img{
 width: 213px;
 height: 313px;
 }
-.movie-collection p{
+
+.movie-collection p, .movie-collection-two p{
     font-size: 16px;
 }
 .trailer-container{
@@ -851,5 +1073,36 @@ height: 313px;
     gap: 85px;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
+    padding-bottom: 50px;
+}
+.movie-collection, .movie-collection-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    padding-bottom: 50px;
+}
+.batman,
+.once-up,
+.toy-story,
+.godzilla {
+    padding: 0;
+
+}
+.transformers,
+.star-wars,
+.avengers,
+.black-panther {
+    padding: 0px;
+}
+.black-panther-two, .godzilla{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.heading-two, .heading-three, .heading-four, .soon{
+    padding-bottom: 20px;
 }
 }
