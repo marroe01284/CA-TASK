@@ -2,7 +2,7 @@
 # Project Name
 
 WELCOME TO MYE FIRST HTML AND CSS PROJECT
-the project was based on mye figma design of a movie streaming platform called SQUARE EYES 
+
 
 ## Table of Contents
 
@@ -24,7 +24,7 @@ Welcome to Square Eyes, where the love for film knows no bounds. We're the ultim
 
 List the key features of your project.
 
-- Log in, just press the log in button and it will direct you to the home screen, u can also type in ur mail adress and a password but it doesnt run it.
+- Log in, just press the log in button and it will direct you to the home screen, u can also type in your mail adress and a password but it doesnt run it.
 - the links in the navbar works so you can direct yourself to all the pages via the nav bar 
 
 
