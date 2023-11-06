@@ -5,22 +5,22 @@
     --button-color: #5237D4;
     --button-inactive: #696A6A;
 }
-*{
+
+* {
     box-sizing: border-box;
     margin: 0;
 }
-body{
+
+body {
     background-color: var(--background-color);
     font-family: 'Poppins', sans-serif;
 }
+
 .header {
     top: 0;
     left: 0;
     width: 100%;
-    background: transparent;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding-bottom: 5%;
 }
 
 .square-eyes {
@@ -29,6 +29,10 @@ body{
 }
 
 .navigation {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
 }
 
@@ -40,32 +44,36 @@ body{
 .fa-bars {
     color: #FFFFFF;
 }
-.h-header{
+
+.h-header {
     color: #FFFFFF;
     font-size: 28px;
     font-weight: 600;
     text-align: center;
 }
-.contact-container{
+
+.contact-container {
     width: 310px;
     height: 328px;
     background-color: #252525;
     text-align: center;
     margin: 32px 60px;
-
 }
-.chat{
+
+.chat {
     font-size: 1.5rem;
     color: #FFFFFF;
     padding-top: 16px;
-} 
-.p-online{
+}
+
+.p-online {
     color: #D9D9D9;
     font-size: 14px;
     font-weight: 400;
     padding-top: 32px;
 }
-.start{
+
+.start {
     width: 200px;
     height: 47px;
     color: #FFFFFF;
@@ -76,45 +84,55 @@ body{
     font-size: 14px;
     font-weight: 400;
 }
-.contact{
+
+.contact {
     width: 310px;
     height: 340px;
     background-color: #252525;
     margin: 32px 60px;
     text-align: center;
 }
-.mail{
+
+.mail {
     font-size: 1.5rem;
     color: #FFFFFF;
     padding-top: 16px;
     text-align: center;
 }
-.email{
+
+.email {
     color: #FFFFFF;
     font-size: 14px;
-   text-align: center;
+    text-align: center;
 }
-.email input{
+
+.email input {
     border-radius: 6px;
     width: 200px;
     height: 28px;
-    
+
 }
 
-.e-mail, .subject, .text-box{
+.e-mail,
+.subject,
+.text-box {
     font-size: 14px;
     font-weight: 400;
 }
-.e-mail{
+
+.e-mail {
     padding-right: 100px;
 }
-.subject{
+
+.subject {
     padding-right: 145px;
 }
-.text-box{
+
+.text-box {
     padding-right: 90px;
 }
-.send{
+
+.send {
     background-color: #4A0FC8;
     color: #FFFFFF;
     font-size: 14px;
@@ -124,35 +142,40 @@ body{
     border-radius: 6px;
     margin-top: 13px;
 }
-.email textarea{
-resize: none;
-width: 200px;
-height: 122px;
-border-radius: 6px;
-font-family: 'Poppins', sans-serif;
-font-size: 12px;
-font-weight: 400;
+
+.email textarea {
+    resize: none;
+    width: 200px;
+    height: 122px;
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
 }
-.messenger{
+
+.messenger {
     width: 310px;
     height: 328px;
     background-color: #252525;
     text-align: center;
     margin: 32px 60px;
 }
-.messenger h2{
+
+.messenger h2 {
     font-size: 1.5rem;
     color: #FFFFFF;
     padding-top: 16px;
     font-weight: 600;
 }
-.messenger p{
+
+.messenger p {
     color: #D9D9D9;
     font-size: 14px;
     font-weight: 400;
     padding-top: 32px;
 }
-.fb-messenger{
+
+.fb-messenger {
     width: 200px;
     height: 47px;
     font-size: 14px;
@@ -161,19 +184,19 @@ font-weight: 400;
     background-color: #01A8FF;
     border-radius: 6px;
     border: none;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin: 42px 55px;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 42px 55px;
 }
 
-.fb-messenger i{
+.fb-messenger i {
     font-size: 20px;
     padding-right: 20px;
     text-align: center;
 }
-.footer{
+
+.footer {
     color: #FFFFFF;
     display: flex;
     justify-content: space-evenly;
@@ -181,30 +204,184 @@ font-weight: 400;
     margin-top: 40px;
 
 }
-.copy-right{
-    color: #FFFFFF;
-    padding-top: 30px;
-    padding-left: 5px;
-} 
-.footer-paragraph{
-    padding-right: 190px;
-    padding-left: 25px;
-}
-.footer{
-    color: #FFFFFF;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 40px;
 
-}
-.copy-right{
+.copy-right {
     color: #FFFFFF;
     padding-top: 30px;
     padding-left: 5px;
-} 
-.footer-paragraph{
+}
+
+.footer-paragraph {
     padding-right: 190px;
     padding-left: 25px;
 }
 
+.copy-right {
+    color: #FFFFFF;
+    padding-top: 30px;
+    padding-left: 5px;
+}
+
+@media (min-width: 430px) {
+    .navigation ul {
+        display: none;
+    }
+
+    .icon-header-two {
+        display: none;
+    }
+
+    .footer-container {
+        display: none;
+    }
+   .help-central{
+    display: none;
+   }
+   .central{
+    display: none;
+   }
+    
+}
+
+@media (min-width: 1280px) {
+    .footer-desk {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        color: #D9D9D9;
+        font-family: 'Poppins', sans-serif;
+        padding-top: 33px;
+        padding-left: 20px;
+        padding-bottom: 23px;
+        padding-right: 150px;
+    }
+
+    .footer-desk-two {
+        display: flex;
+        color: #FFFFFF;
+        font-family: 'Poppins', sans-serif;
+        padding-left: 70px;
+    }
+
+    .help {
+        padding-right: 199px;
+    }
+
+    .footer {
+        display: none;
+    }
+
+    .copy-right {
+        display: none;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        width: 1440px;
+        height: 181px;
+        background-color: #181818;
+        width: 100%;
+    }
+
+    .word-flex {
+        display: flex;
+        flex-grow: 1;
+        gap: 34px;
+        width: 100%;
+    }
+
+    .icons-flex {
+        display: flex;
+        gap: 34px;
+        flex-grow: 1;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .navigation a {
+        font-size: 16px;
+        font-weight: 400;
+        color: #D9D9D9;
+        text-decoration: none;
+    }
+
+    .navigation ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 24px;
+        list-style-type: none;
+        padding: 0px;
+    }
+
+    .icon-header {
+        display: none;
+    }
+
+    .fa-cart-shopping {
+        display: none;
+    }
+
+    .icon-header-two {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        color: #D9D9D9;
+        padding-left: 100px;
+    }
+
+    .contact-us-container {
+        display: flex;
+    }
+
+    .central {
+        text-align: center;
+        color: #FFFFFF;
+        font-size: 32px;
+        font-weight: 500;
+        padding-bottom: 2%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .account {
+        width: 310px;
+        height: 482px;
+        background-color: #FFFFFF;
+        border-radius: 6px;
+        text-align: center;
+        padding-top: 30px;
+
+    }
+
+    .ul-help {
+        padding: 0;
+        list-style-type: none;
+    }
+    .ul-help a {
+        text-decoration: none;
+    }
+
+    .help-central {
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+        align-items: center;
+        background-color: #dadada;
+        height: 534px;
+    }
+
+}
