@@ -5,15 +5,18 @@
     --button-color: #5237D4;
     --button-inactive: #696A6A;
 }
-*{
+
+* {
     box-sizing: border-box;
     margin: 0;
 }
+
 body {
     background-color: var(--background-color);
     min-height: 100vh;
     font-family: 'Poppins', sans-serif;
 }
+
 .header {
     top: 0;
     left: 0;
@@ -41,7 +44,8 @@ body {
 .fa-bars {
     color: #FFFFFF;
 }
-.card-container{
+
+.card-container {
     width: 412px;
     height: 324px;
     background-color: #252525;
@@ -51,40 +55,45 @@ body {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto;
-    grid-template-areas: 
-    "one two"
-    "one three"
-    "one four"
+    grid-template-areas:
+        "one two"
+        "one three"
+        "one four"
     ;
 }
-.rent-card{
-    grid-area: one;
 
+.rent-card {
+    grid-area: one;
 }
-.rent-card img{
+
+.rent-card img {
     width: 216px;
     height: 308px;
     padding: 5px;
     margin: 8px 0 8px 10px;
 }
-.card-heading{
+
+.card-heading {
     grid-area: two;
     text-align: center;
     margin-top: 75px;
     font-size: 1.5rem;
     color: #FFFFFF;
 }
-.card-p{
+
+.card-p {
     grid-area: three;
     text-align: center;
     font-size: 1rem;
     color: #FFFFFF;
 }
-.rent-bttn{
+
+.rent-bttn {
     grid-area: four;
     text-align: center;
 }
-.btn-one{
+
+.btn-one {
     background-color: var(--button-color);
     width: 100px;
     height: 30px;
@@ -92,11 +101,13 @@ body {
     border-radius: 6px;
     border: none;
 }
-.btn-one a{
+
+.btn-one a {
     text-decoration: none;
     color: #FFFFFF;
 }
-.card-container-two{
+
+.card-container-two {
     width: 412px;
     height: 324px;
     background-color: #252525;
@@ -106,41 +117,45 @@ body {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto;
-    grid-template-areas: 
-    "aa bb"
-    "aa cc"
-    "aa dd"
+    grid-template-areas:
+        "aa bb"
+        "aa cc"
+        "aa dd"
     ;
 }
-.buy-card{
-    grid-area: aa;
 
+.buy-card {
+    grid-area: aa;
 }
-.buy-card img{
+
+.buy-card img {
     width: 216px;
     height: 308px;
     padding: 5px;
     margin: 8px 0 8px 10px;
 }
-.buy-heading{
+
+.buy-heading {
     grid-area: bb;
     text-align: center;
     margin-top: 75px;
     font-size: 1.5rem;
     color: #FFFFFF;
 }
-.p-buy{
+
+.p-buy {
     grid-area: cc;
     text-align: center;
     font-size: 1rem;
     color: #FFFFFF;
-
 }
-.buy-btn{
+
+.buy-btn {
     grid-area: dd;
     text-align: center;
 }
-.btn-two{
+
+.btn-two {
     background-color: var(--button-color);
     width: 100px;
     height: 30px;
@@ -148,11 +163,13 @@ body {
     border-radius: 6px;
     border: none;
 }
-.btn-two a{
+
+.btn-two a {
     text-decoration: none;
     color: #FFFFFF;
 }
-.footer{
+
+.footer {
     color: #FFFFFF;
     display: flex;
     justify-content: space-evenly;
@@ -160,12 +177,14 @@ body {
     margin-top: 40px;
 
 }
-.copy-right{
+
+.copy-right {
     color: #FFFFFF;
     padding-top: 30px;
     padding-left: 5px;
-} 
-.footer-paragraph{
+}
+
+.footer-paragraph {
     padding-right: 190px;
     padding-left: 25px;
 }
