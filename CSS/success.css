@@ -5,15 +5,18 @@
     --button-color: #5237D4;
     --button-inactive: #696A6A;
 }
-*{
+
+* {
     box-sizing: border-box;
     margin: 0;
 }
+
 body {
     background-color: var(--background-color);
     min-height: 100vh;
     font-family: 'Poppins', sans-serif;
 }
+
 .header {
     top: 0;
     left: 0;
@@ -41,7 +44,8 @@ body {
 .fa-bars {
     color: #FFFFFF;
 }
-.success-icon{
+
+.success-icon {
     font-size: 100px;
     color: #9B6CFE;
     display: flex;
@@ -50,32 +54,37 @@ body {
     margin-top: 60px;
     padding-bottom: 44px;
 }
-.heading{
+
+.heading {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.heading h1{
-color: #FFFFFF;
-text-transform: capitalize;
-font-size: 32px;
-font-weight: 500;
-padding-bottom: 44px;
+
+.heading h1 {
+    color: #FFFFFF;
+    text-transform: capitalize;
+    font-size: 32px;
+    font-weight: 500;
+    padding-bottom: 44px;
 }
-.heading p{
+
+.heading p {
     color: #FFFFFF;
     font-size: 14px;
     font-weight: 400;
     padding-bottom: 36px;
 }
-.heading img{
+
+.heading img {
     width: 216px;
     height: 308px;
     border-radius: 6px;
 
 }
-.play{
+
+.play {
     width: 266px;
     height: 44px;
     color: #FFFFFF;
