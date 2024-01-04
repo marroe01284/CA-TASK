@@ -497,7 +497,7 @@ body {
 }
 
 /*Medium screens*/
-@media (min-width: 768px) {}
+@media (min-width: 744px) {}
 
 /*Large screens*/
 @media (min-width: 1024px) {
